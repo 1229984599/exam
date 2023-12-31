@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import ThemeChange from "./components/ThemeChange/index.vue";
-import LocalesChange from "./components/LocalesChange/index.vue";
-import UnoCSSIconButton from "~/components/Icon/UnoCSSIconButton.vue";
 
 defineOptions({
   name: "Navbar",
@@ -20,32 +18,20 @@ defineOptions({
           aria-label="Homepage"
           class="px-2 btn btn-ghost"
         >
+          <div class="avatar">
+            <div class="w-8 rounded-full">
+              <img src="/title.ico" />
+            </div>
+          </div>
           <div
-            class="inline-flex text-lg text-primary transition-all duration-200 md:text-3xl"
+            class="inline-flex text-xl text-primary transition-all duration-200 md:text-3xl"
           >
-            <span class="text-accent">B<span class="lowercase">oot</span></span>
-            <span class="text-base-content">V<span class="lowercase">ue</span></span>
+            <span class="text-accent">红旗小学无纸化测试</span>
           </div>
         </RouterLink>
       </div>
       <div>
-        <ThemeChange />
-        <LocalesChange />
-        <span
-          class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]"
-          data-tip="GitHub"
-        >
-          <span class="flex-none items-center">
-            <a
-              aria-label="Github"
-              target="_blank"
-              href="https://github.com/kirklin/boot-vue"
-              class="drawer-button normal-case btn btn-square btn-ghost"
-            >
-              <UnoCSSIconButton icon="i-mdi-github" />
-            </a>
-          </span>
-        </span>
+        <ThemeChange data-theme="emerald" />
       </div>
     </nav>
   </div>

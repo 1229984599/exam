@@ -12,6 +12,7 @@ import VueDevTools from "vite-plugin-vue-devtools";
 // vite.config.ts
 import VueI18nPlugin from "@intlify/unplugin-vue-i18n/vite";
 import UnoCss from "unocss/vite";
+import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,14 +23,12 @@ export default defineConfig({
     proxy: {},
   },
   plugins: [
-    Vue(
-      {
-        script: {
-          propsDestructure: true,
-          defineModel: true,
-        },
+    Vue({
+      script: {
+        propsDestructure: true,
+        defineModel: true,
       },
-    ),
+    }),
     Icons({
       scale: 1.5, // Scale of icons against 1em
       defaultStyle: "", // Style apply to icons
@@ -49,11 +48,9 @@ export default defineConfig({
         "@vueuse/core",
       ],
       dts: "types/auto-imports.d.ts",
-      dirs: [
-        "src/composables",
-        "src/store",
-      ],
+      dirs: ["src/composables", "src/store"],
       vueTemplate: true,
+      resolvers: [ElementPlusResolver()],
     }),
 
     // https://github.com/antfu/unplugin-vue-components
@@ -61,10 +58,12 @@ export default defineConfig({
       extensions: ["vue"],
       include: [/\.vue$/, /\.vue\?vue/],
       dts: "types/components.d.ts",
-      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
-      resolvers: [
-        IconsResolver(),
+      exclude: [
+        /[\\/]node_modules[\\/]/,
+        /[\\/]\.git[\\/]/,
+        /[\\/]\.nuxt[\\/]/,
       ],
+      resolvers: [IconsResolver(), ElementPlusResolver()],
     }),
 
     // https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n
