@@ -3,6 +3,7 @@ import { createApp } from "vue";
 
 // Vue Router
 import { createPinia } from "pinia";
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 import { createI18n } from "vue-i18n";
 
 import messages from "@intlify/unplugin-vue-i18n/messages";
@@ -23,6 +24,6 @@ app.use(
     messages,
   }),
 );
-app.use(createPinia());
+app.use(createPinia().use(piniaPluginPersistedstate));
 app.use(router);
 app.mount("#app");

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ThemeChange from "./components/ThemeChange/index.vue";
+import MConfig from "~/layouts/Navbar/components/config.vue";
 
 defineOptions({
   name: "Navbar",
@@ -20,7 +21,7 @@ defineOptions({
         >
           <div class="avatar">
             <div class="w-8 rounded-full">
-              <img src="/title.ico" />
+              <img src="/title.ico" alt="红旗小学" />
             </div>
           </div>
           <div
@@ -29,6 +30,16 @@ defineOptions({
             <span class="text-accent">红旗小学无纸化测试</span>
           </div>
         </RouterLink>
+      </div>
+      <div
+        cursor-pointer
+        rounded="lg"
+        p-2
+        transition-all
+        duration-200
+        hover="bg-gray-300"
+      >
+        <MConfig />
       </div>
       <div>
         <ThemeChange data-theme="emerald" />

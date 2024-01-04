@@ -1,3 +1,3 @@
-import { useQuestionStore } from "./yuwen";
+import { useCategoryStore } from "./category";
 
-export { useQuestionStore };
+export { useCategoryStore };
