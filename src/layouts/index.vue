@@ -6,6 +6,10 @@ defineOptions({
 });
 
 const categoryStore = useCategoryStore();
+const route = useRoute();
+const isShowRefresh = computed(() => {
+  return route.name !== "Home" && categoryStore.questionList.length > 0;
+});
 
 function refreshQuestion() {
   window.scrollTo({
@@ -30,9 +34,11 @@ function refreshQuestion() {
         <div class="i-mdi:rocket" text-red></div>
       </el-backtop>
       <div
+        v-if="isShowRefresh"
         @click="refreshQuestion"
         md="right-5"
-        class="fixed right-2 bottom-28 cursor-pointer p-2 rounded-full bg-white shadow-xl"
+        hover="bg-white shadow-xl"
+        class="fixed right-2 bottom-28 cursor-pointer p-2 rounded-full"
       >
         <div class="i-tabler:refresh w-[50px] h-[50px]" text-red></div>
       </div>

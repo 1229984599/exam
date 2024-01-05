@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { FormInstance } from "element-plus";
 import { useRouter } from "vue-router";
+import MQuestionItem from "~/components/QuestionItem.vue";
 
 const categoryStore = useCategoryStore();
 const router = useRouter();
@@ -26,6 +27,23 @@ const resetForm = (formEl: FormInstance | undefined) => {
   if (!formEl) return;
   formEl.resetFields();
 };
+// 防止有人瞎搞
+watch(
+  () => [categoryStore.config.grade, categoryStore.config.subject],
+  () => {
+    categoryStore.config.title = "";
+  },
+);
+const isShow = computed(() => {
+  if (
+    categoryStore.config.title !== "" &&
+    categoryStore.questionList.length > 0
+  ) {
+    categoryStore.randQuestion(true);
+    return true;
+  }
+  return false;
+});
 </script>
 
 <template>
@@ -63,7 +81,12 @@ const resetForm = (formEl: FormInstance | undefined) => {
           </el-select>
         </el-form-item>
         <el-form-item label="字体大小" prop="textSize">
-          <el-input-number v-model="categoryStore.config.textSize" :step="5" />
+          <el-slider
+            :min="20"
+            :max="300"
+            v-model="categoryStore.config.textSize"
+            :step="5"
+          />
         </el-form-item>
         <el-form-item>
           <el-button type="primary" @click="submitForm(ruleFormRef)">
@@ -76,6 +99,15 @@ const resetForm = (formEl: FormInstance | undefined) => {
       </el-form>
     </div>
   </div>
+  <m-question-item
+    v-if="isShow"
+    :title="categoryStore.config.title"
+    :text-size="categoryStore.config.textSize"
+    :question-list="categoryStore.currentQuestion.questionList"
+    :sub-title="categoryStore.currentQuestion.subTitle"
+    :question-type="categoryStore.currentQuestion.questionType"
+    :other-desc="categoryStore.currentQuestion.otherDesc"
+  />
 </template>
 
 <style scoped></style>

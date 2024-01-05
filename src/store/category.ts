@@ -32,7 +32,7 @@ export const useCategoryStore = defineStore("category", {
     },
   },
   actions: {
-    randQuestion(): SubQuestionType {
+    randQuestion(changeTextSize = false): SubQuestionType {
       // @ts-ignore
       const question: QuestionDataType = questionData[this.config.grade][
         this.config.subject
@@ -41,12 +41,19 @@ export const useCategoryStore = defineStore("category", {
       });
       const randomIndex = Math.floor(Math.random() * question.data.length);
       this.currentQuestion = question.data[randomIndex];
-      // 如果data中配置了字体大小，默认使用data中字体大小
-      if (this.currentQuestion?.textSize) {
+      if (changeTextSize && this.currentQuestion?.textSize) {
         this.config.textSize = this.currentQuestion.textSize;
       }
       return this.currentQuestion;
     },
+    resetConfig() {
+      this.config = {
+        grade: "",
+        subject: "",
+        title: "",
+        textSize: 160,
+      };
+    },
   },
-  // persist: true,
+  persist: true,
 });

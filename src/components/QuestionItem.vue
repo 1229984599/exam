@@ -9,7 +9,6 @@ type propsType = "text" | "image";
 defineProps({
   questionList: {
     required: true,
-    type: Array || String,
     default: [],
   },
   questionType: {
@@ -29,6 +28,10 @@ defineProps({
     type: Number,
     default: 160,
   },
+  otherDesc: {
+    type: String,
+    default: "",
+  },
 });
 // 将questionList强制转换为数组类型。
 // const questionTransform = computed(() =>
@@ -43,15 +46,22 @@ defineProps({
   <div>
     <h1
       class="divider font-700 cursor-pointer"
-      text="center 2xl #095aa9"
+      text="center 4xl #095aa9"
       p="t-6 b-1"
-      md="text-[60px] pb-4"
+      md="text-6xl pb-4"
     >
       {{ title }}
     </h1>
-    <h3 p="x2" text-center m="b-5 t-5" md="mt-10 text-lg" font-700>
+    <p
+      p="x2"
+      text="2xl"
+      indent="2xl"
+      m="b-3 t-8"
+      md="text-center mt-10 text-5xl"
+      font-700
+    >
       {{ subTitle }}
-    </h3>
+    </p>
   </div>
   <!--  如果问题是数组，则显示问题列表。-->
   <!--  问题列表-->
@@ -64,23 +74,32 @@ defineProps({
   >
     <div v-for="question in questionList">
       <div v-if="questionType === 'text'">
-        {{ question }}
+        <span v-html="question"></span>
       </div>
       <div v-else-if="questionType === 'image'">
-        <el-image fit="fill" :src="question" :preview-src-list="[question]" />
+        <el-image
+          :hide-on-click-modal="true"
+          fit="fill"
+          :src="question"
+          :preview-src-list="[question]"
+        />
       </div>
     </div>
   </div>
   <div md="text-center" justify-center v-else>
-    <p class="question-item text-center" v-if="questionType === 'text'">
-      {{ questionList }}
-    </p>
+    <div class="question-item px-2" indent="2xl" v-if="questionType === 'text'">
+      <span indent="2xl" v-html="questionList"></span>
+    </div>
     <el-image
       v-else-if="questionType === 'image'"
+      :hide-on-click-modal="true"
       fit="fill"
       :src="questionList"
       :preview-src-list="[questionList]"
     />
+    <div class="question-item px-2" indent="2xl">
+      <span v-html="otherDesc"></span>
+    </div>
   </div>
 </template>
 

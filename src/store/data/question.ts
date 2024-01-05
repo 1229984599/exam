@@ -4,7 +4,8 @@ export interface SubQuestionType {
   subTitle?: string;
   questionType?: propsType;
   textSize?: number; // 字体大小
-  questionList: string[]; // 子题目类型
+  questionList: string[]; // 子题目类型（不选图片可使用html）不能为列表
+  otherDesc: string; // 其它描述（可使用html）不能为列表
 }
 
 export interface QuestionDataType {
@@ -138,42 +139,42 @@ export const questionData = {
           {
             subTitle: "背诵《对韵歌》并朗诵以下文段",
             questionType: "image",
-            questionList: "/data/one/yuwen/我的家乡.png",
+            questionList: "/data/one/yuwen/触目成诵/1.png",
           },
           {
             subTitle: "背诵《咏鹅》并朗诵以下文段",
             questionType: "image",
-            questionList: "/data/one/yuwen/秋天笑了.png",
+            questionList: "/data/one/yuwen/触目成诵/2.png",
           },
           {
             subTitle: "背诵《小小的船》并朗诵以下文段",
             questionType: "image",
-            questionList: "/data/one/yuwen/救小猴.png",
+            questionList: "/data/one/yuwen/触目成诵/3.png",
           },
           {
             subTitle: "背诵《江南》并朗诵以下文段",
             questionType: "image",
-            questionList: "/data/one/yuwen/江南.png",
+            questionList: "/data/one/yuwen/触目成诵/4.png",
           },
           {
             subTitle: "背诵《画》并朗诵以下文段",
             questionType: "image",
-            questionList: "/data/one/yuwen/祖国我爱你.png",
+            questionList: "/data/one/yuwen/触目成诵/5.png",
           },
           {
             subTitle: "背诵《悯农》并朗诵以下文段",
             questionType: "image",
-            questionList: "/data/one/yuwen/小熊砍树.png",
+            questionList: "/data/one/yuwen/触目成诵/6.png",
           },
           {
             subTitle: "背诵《古朗月行》并朗诵以下文段",
             questionType: "image",
-            questionList: "/data/one/yuwen/粗心的小画家.png",
+            questionList: "/data/one/yuwen/触目成诵/7.png",
           },
           {
             subTitle: "背诵《风》并朗诵以下文段",
             questionType: "image",
-            questionList: "/data/one/yuwen/剪窗花.png",
+            questionList: "/data/one/yuwen/触目成诵/8.png",
           },
         ],
       },
@@ -318,27 +319,33 @@ export const questionData = {
         title: "言之有理",
         data: [
           {
-            subTitle: "你说说下面算式“凑十法”的方法",
+            textSize: 150,
+            subTitle: "请你说说下面算式“凑十法”的方法",
             questionList: "8+6=",
           },
           {
-            subTitle: "你说说下面算式“凑十法”的方法",
+            textSize: 150,
+            subTitle: "请你说说下面算式“凑十法”的方法",
             questionList: "9+4=",
           },
           {
-            subTitle: "你说说下面算式“凑十法”的方法",
+            textSize: 150,
+            subTitle: "请你说说下面算式“凑十法”的方法",
             questionList: "5+8=",
           },
           {
-            subTitle: "你说说下面算式“凑十法”的方法",
+            textSize: 150,
+            subTitle: "请你说说下面算式“凑十法”的方法",
             questionList: "8+7=",
           },
           {
-            subTitle: "你说说下面算式“凑十法”的方法",
+            textSize: 150,
+            subTitle: "请你说说下面算式“凑十法”的方法",
             questionList: "7+5=",
           },
           {
-            subTitle: "你说说下面算式“凑十法”的方法",
+            textSize: 150,
+            subTitle: "请你说说下面算式“凑十法”的方法",
             questionList: "8+8=",
           },
         ],
@@ -347,28 +354,34 @@ export const questionData = {
         title: "慧思智拨",
         data: [
           {
-            questionType: "image",
-            questionList: "/data/one/math/慧思智拨/1.png",
+            textSize: 45,
+            questionList:
+              "<p>请你在计数器上拨出12，并说说它的组成。</p></br><p>请你在钟面上拨出3:00</p>",
           },
           {
-            questionType: "image",
-            questionList: "/data/one/math/慧思智拨/2.png",
+            textSize: 45,
+            questionList:
+              "<p>请你在计数器上拨出18，并说说它的组成。</p></br><p>请你在钟面上拨出6:00</p>",
           },
           {
-            questionType: "image",
-            questionList: "/data/one/math/慧思智拨/3.png",
+            textSize: 45,
+            questionList:
+              "<p>请你在计数器上拨出17，并说说它的组成。</p></br><p>请你在钟面上拨出9:00</p>",
           },
           {
-            questionType: "image",
-            questionList: "/data/one/math/慧思智拨/4.png",
+            textSize: 45,
+            questionList:
+              "<p>请你在计数器上拨出15，并说说它的组成。</p></br><p>请你在钟面上拨出12:00</p>",
           },
           {
-            questionType: "image",
-            questionList: "/data/one/math/慧思智拨/5.png",
+            textSize: 45,
+            questionList:
+              "<p>请你在计数器上拨出16，并说说它的组成。</p></br><p>请你在钟面上拨出8:00</p>",
           },
           {
-            questionType: "image",
-            questionList: "/data/one/math/慧思智拨/6.png",
+            textSize: 45,
+            questionList:
+              "<p>请你在计数器上拨出14，并说说它的组成。</p></br><p>请你在钟面上拨出4:00</p>",
           },
         ],
       },
@@ -691,28 +704,46 @@ export const questionData = {
         title: "慧思智拨",
         data: [
           {
+            subTitle: "请你用三角尺判断下面的角是直角、锐角还是钝角？",
             questionType: "image",
             questionList: "/data/two/math/慧思智拨/1.png",
+            otherDesc: "<p class='font-600'>请你在钟面上拨出3:15</p>",
+            textSize: 40,
           },
           {
+            subTitle: "请你用三角尺判断下面的角是直角、锐角还是钝角？",
             questionType: "image",
             questionList: "/data/two/math/慧思智拨/2.png",
+            otherDesc: "<p class='font-600'>请你在钟面上拨出8:20</p>",
+            textSize: 40,
           },
           {
+            subTitle: "请你用三角尺判断下面的角是直角、锐角还是钝角？",
             questionType: "image",
             questionList: "/data/two/math/慧思智拨/3.png",
+            otherDesc: "<p class='font-600'>请你在钟面上拨出5:40</p>",
+            textSize: 40,
           },
           {
+            subTitle: "请你用三角尺判断下面的角是直角、锐角还是钝角？",
             questionType: "image",
             questionList: "/data/two/math/慧思智拨/4.png",
+            otherDesc: "<p class='font-600'>请你在钟面上拨出8:50</p>",
+            textSize: 40,
           },
           {
+            subTitle: "请你用三角尺判断下面的角是直角、锐角还是钝角？",
             questionType: "image",
             questionList: "/data/two/math/慧思智拨/5.png",
+            otherDesc: "<p class='font-600'>请你在钟面上拨出1:35</p>",
+            textSize: 40,
           },
           {
+            subTitle: "请你用三角尺判断下面的角是直角、锐角还是钝角？",
             questionType: "image",
             questionList: "/data/two/math/慧思智拨/6.png",
+            otherDesc: "<p class='font-600'>请你在钟面上拨出7:45</p>",
+            textSize: 40,
           },
         ],
       },

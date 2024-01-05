@@ -7,16 +7,13 @@ defineOptions({
 });
 const categoryStore = useCategoryStore();
 categoryStore.randQuestion();
-// const textSize = computed(() => {
-//   return (
-//     categoryStore.currentQuestion.textSize || categoryStore.config.textSize
-//   );
-// });
+
 // 监听题目是否发生变化
 watch(
-  () => categoryStore.config.title,
+  () => [categoryStore.config.title],
   () => {
-    categoryStore.randQuestion();
+    categoryStore.randQuestion(true);
+    // 不放在randQuestion改变字体，防止刷新时字体又被设置为默认值
   },
 );
 </script>
@@ -24,10 +21,11 @@ watch(
 <template>
   <m-question-item
     :title="categoryStore.config.title"
+    :text-size="categoryStore.config.textSize"
     :question-list="categoryStore.currentQuestion.questionList"
     :sub-title="categoryStore.currentQuestion.subTitle"
     :question-type="categoryStore.currentQuestion.questionType"
-    :text-size="categoryStore.config.textSize"
+    :other-desc="categoryStore.currentQuestion.otherDesc"
   />
 </template>
 
