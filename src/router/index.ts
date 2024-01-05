@@ -1,4 +1,4 @@
-import type { RouteRecordRaw } from "vue-router";
+import type { RouteLocationNormalized, RouteRecordRaw } from "vue-router";
 import { createRouter, createWebHashHistory } from "vue-router";
 import { basicRoutes } from "./routes";
 import NProgress from "~/config/nprogress";
@@ -13,9 +13,26 @@ export const router = createRouter({
 });
 
 // Injection Progress
-router.beforeEach(() => {
+router.beforeEach((to: RouteLocationNormalized, _from, next) => {
   if (!NProgress.isStarted()) {
     NProgress.start();
+  }
+  const categoryStore = useCategoryStore();
+  const { title, subject, grade } = categoryStore.config;
+  // debugger;
+  if (title && subject && grade) {
+    if (to.name === "Home") {
+      next({ name: "Question" });
+      return;
+    }
+    next();
+  } else {
+    if (to.name === "Home") {
+      next();
+      return;
+    }
+    ElMessage.error("请先配置信息");
+    next({ name: "Home" });
   }
 });
 

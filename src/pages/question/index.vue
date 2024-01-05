@@ -7,11 +7,11 @@ defineOptions({
 });
 const categoryStore = useCategoryStore();
 categoryStore.randQuestion();
-const textSize = computed(() => {
-  return (
-    categoryStore.currentQuestion.textSize || categoryStore.config.textSize
-  );
-});
+// const textSize = computed(() => {
+//   return (
+//     categoryStore.currentQuestion.textSize || categoryStore.config.textSize
+//   );
+// });
 // 监听题目是否发生变化
 watch(
   () => categoryStore.config.title,
@@ -27,7 +27,7 @@ watch(
     :question-list="categoryStore.currentQuestion.questionList"
     :sub-title="categoryStore.currentQuestion.subTitle"
     :question-type="categoryStore.currentQuestion.questionType"
-    :text-size="textSize"
+    :text-size="categoryStore.config.textSize"
   />
 </template>
 

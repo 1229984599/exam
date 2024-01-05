@@ -6,10 +6,10 @@ defineOptions({
 });
 
 type propsType = "text" | "image";
-const props = defineProps({
+defineProps({
   questionList: {
     required: true,
-    type: Array,
+    type: Array || String,
     default: [],
   },
   questionType: {
@@ -31,11 +31,11 @@ const props = defineProps({
   },
 });
 // 将questionList强制转换为数组类型。
-const questionTransform = computed(() =>
-  Array.isArray(props.questionList) && props.questionList?.length > 0
-    ? props.questionList
-    : [props.questionList],
-);
+// const questionTransform = computed(() =>
+//   Array.isArray(props.questionList) && props.questionList?.length > 0
+//     ? props.questionList
+//     : [props.questionList],
+// );
 </script>
 
 <template>
@@ -49,29 +49,38 @@ const questionTransform = computed(() =>
     >
       {{ title }}
     </h1>
-    <h3 p="l2 " m="b-5 t-5" md="mt-10 text-lg" font-700>
+    <h3 p="x2" text-center m="b-5 t-5" md="mt-10 text-lg" font-700>
       {{ subTitle }}
     </h3>
   </div>
+  <!--  如果问题是数组，则显示问题列表。-->
   <!--  问题列表-->
   <div
+    v-if="Array.isArray(questionList)"
     p="2"
     md="grid-cols-2 gap-5"
     lg="grid-cols-3 gap-10"
     class="grid justify-center items-center text-center font-600 question-item"
   >
-    <div v-for="question in questionTransform">
+    <div v-for="question in questionList">
       <div v-if="questionType === 'text'">
         {{ question }}
       </div>
       <div v-else-if="questionType === 'image'">
-        <el-image
-          fit="scale-down"
-          :src="question"
-          :preview-src-list="[question]"
-        />
+        <el-image fit="fill" :src="question" :preview-src-list="[question]" />
       </div>
     </div>
+  </div>
+  <div md="text-center" justify-center v-else>
+    <p class="question-item text-center" v-if="questionType === 'text'">
+      {{ questionList }}
+    </p>
+    <el-image
+      v-else-if="questionType === 'image'"
+      fit="fill"
+      :src="questionList"
+      :preview-src-list="[questionList]"
+    />
   </div>
 </template>
 

@@ -12,6 +12,10 @@ function refreshQuestion() {
     top: 0,
     behavior: "smooth",
   });
+  if (categoryStore.questionList.length === 0) {
+    ElMessage.error("请先配置信息");
+    return;
+  }
   categoryStore.randQuestion();
   ElMessage.success("题目已刷新");
 }

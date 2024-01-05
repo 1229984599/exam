@@ -15,17 +15,20 @@ interface ConfigType {
 export const useCategoryStore = defineStore("category", {
   state: () => ({
     config: {
-      grade: "one",
-      subject: "yuwen",
-      title: "“字”得其乐",
+      grade: "",
+      subject: "",
+      title: "",
       textSize: 160,
     } as ConfigType,
     currentQuestion: {} as SubQuestionType,
   }),
   getters: {
     questionList(state): QuestionDataType[] {
-      // @ts-ignore
-      return questionData[state.config.grade][state.config.subject];
+      if (state.config.grade && state.config.subject) {
+        // @ts-ignore
+        return questionData[state.config.grade][state.config.subject];
+      }
+      return [];
     },
   },
   actions: {

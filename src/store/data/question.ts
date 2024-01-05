@@ -235,6 +235,7 @@ export const questionData = {
         title: "神机妙算",
         data: [
           {
+            textSize: 95,
             questionList: [
               "6+2=",
               "5+8=",
@@ -247,6 +248,7 @@ export const questionData = {
             ],
           },
           {
+            textSize: 95,
             questionList: [
               "4+3=",
               "8+7=",
@@ -259,6 +261,7 @@ export const questionData = {
             ],
           },
           {
+            textSize: 95,
             questionList: [
               "3+6=",
               "6+8=",
@@ -271,6 +274,7 @@ export const questionData = {
             ],
           },
           {
+            textSize: 95,
             questionList: [
               "6+3=",
               "9+4=",
@@ -283,6 +287,7 @@ export const questionData = {
             ],
           },
           {
+            textSize: 95,
             questionList: [
               "2+7=",
               "5+9=",
@@ -295,6 +300,7 @@ export const questionData = {
             ],
           },
           {
+            textSize: 95,
             questionList: [
               "1+8=",
               "6+9=",
@@ -363,6 +369,350 @@ export const questionData = {
           {
             questionType: "image",
             questionList: "/data/one/math/慧思智拨/6.png",
+          },
+        ],
+      },
+    ] as QuestionDataType[],
+  },
+  two: {
+    yuwen: [
+      {
+        title: "“字”得其乐",
+        data: [
+          {
+            questionList: [
+              "花园",
+              "杨树",
+              "金桂",
+              "船身",
+              "房屋",
+              "灾害",
+              "到底",
+              "植物",
+              "如果",
+              "事情",
+            ],
+          },
+          {
+            questionList: [
+              "海洋",
+              "坏事",
+              "淹没",
+              "冲毁",
+              "房屋",
+              "灾害",
+              "猜测",
+              "植物",
+              "如果",
+              "旅行",
+            ],
+          },
+          {
+            questionList: [
+              "劝告",
+              "趁早",
+              "将来",
+              "难过",
+              "狂吼",
+              "重复",
+              "哀号",
+              "井沿",
+              "回答",
+              "口渴",
+            ],
+          },
+          {
+            questionList: [
+              "曹冲",
+              "官员",
+              "议论",
+              "重量",
+              "画线",
+              "停止",
+              "玲玲",
+              "详细",
+              "一幅",
+              "催促",
+            ],
+          },
+          {
+            questionList: [
+              "扁担",
+              "祝福",
+              "健康",
+              "货轮",
+              "感谢",
+              "蚜虫",
+              "下铺",
+              "泼水",
+              "腊月",
+              "灭火",
+            ],
+          },
+          {
+            questionList: [
+              "脑袋",
+              "阿姨",
+              "淹没",
+              "旅行",
+              "帐篷",
+              "世界",
+              "辛苦",
+              "议论",
+              "结束",
+              "弹钢琴",
+            ],
+          },
+          {
+            questionList: [
+              "整齐",
+              "打仗",
+              "照料",
+              "民族",
+              "温度",
+              "龙舟",
+              "行驶",
+              "容易",
+              "踩水",
+              "盛饭",
+            ],
+          },
+          {
+            questionList: [
+              "桦树",
+              "耐心",
+              "桂花",
+              "秋裤",
+              "指南针",
+              "守护",
+              "化石",
+              "帮助",
+              "抽水",
+              "登山鞋",
+            ],
+          },
+        ],
+      },
+      {
+        title: "触目成诵",
+        data: [
+          {
+            subTitle: "背诵《梅花》并朗诵以下文段",
+            questionType: "image",
+            questionList: "/data/two/yuwen/触目成诵/1.png",
+          },
+          {
+            subTitle: "背诵《小儿垂钓》并朗诵以下文段",
+            questionType: "image",
+            questionList: "/data/two/yuwen/触目成诵/2.png",
+          },
+          {
+            subTitle: "背诵《登鹳雀楼》并朗诵以下文段",
+            questionType: "image",
+            questionList: "/data/two/yuwen/触目成诵/3.png",
+          },
+          {
+            subTitle: "背诵《望庐山瀑布》并朗诵以下文段",
+            questionType: "image",
+            questionList: "/data/two/yuwen/触目成诵/4.png",
+          },
+          {
+            subTitle: "背诵《夜宿山寺》并朗诵以下文段",
+            questionType: "image",
+            questionList: "/data/two/yuwen/触目成诵/5.png",
+          },
+          {
+            subTitle: "背诵《数九歌》并朗诵以下文段",
+            questionType: "image",
+            questionList: "/data/two/yuwen/触目成诵/6.png",
+          },
+          {
+            subTitle: "背诵《敕勒歌》并朗诵以下文段",
+            questionType: "image",
+            questionList: "/data/two/yuwen/触目成诵/7.png",
+          },
+          {
+            subTitle: "背诵《江雪》并朗诵以下文段",
+            questionType: "image",
+            questionList: "/data/two/yuwen/触目成诵/8.png",
+          },
+        ],
+      },
+      {
+        title: "能说会道",
+        data: [
+          {
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            questionType: "image",
+            questionList: "/data/two/yuwen/能说会道/1.png",
+          },
+          {
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            questionType: "image",
+            questionList: "/data/two/yuwen/能说会道/2.png",
+          },
+          {
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            questionType: "image",
+            questionList: "/data/two/yuwen/能说会道/3.png",
+          },
+          {
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            questionType: "image",
+            questionList: "/data/two/yuwen/能说会道/4.png",
+          },
+          {
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            questionType: "image",
+            questionList: "/data/two/yuwen/能说会道/5.png",
+          },
+          {
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            questionType: "image",
+            questionList: "/data/two/yuwen/能说会道/6.png",
+          },
+        ],
+      },
+    ] as QuestionDataType[],
+    math: [
+      {
+        title: "神机妙算",
+        data: [
+          {
+            questionList: [
+              "10+17=",
+              "43+7=",
+              "9×5=",
+              "8×6=",
+              "50-7=",
+              "73-20=",
+              "6×7=",
+              "4×2=",
+            ],
+          },
+          {
+            questionList: [
+              "82+10=",
+              "35+5=",
+              "6×9=",
+              "3×8=",
+              "40-9=",
+              "63-20=",
+              "9×6=",
+              "2×5=",
+            ],
+          },
+          {
+            questionList: [
+              "20+13=",
+              "32+4=",
+              "7×8=",
+              "2×6=",
+              "40-3=",
+              "93-40=",
+              "8×2=",
+              "4×5=",
+            ],
+          },
+          {
+            questionList: [
+              "40+36=",
+              "54+6=",
+              "3×9=",
+              "5×7=",
+              "80-3=",
+              "63-30=",
+              "8×4=",
+              "7×2=",
+            ],
+          },
+          {
+            questionList: [
+              "30+27=",
+              "52+8=",
+              "7×4=",
+              "5×6=",
+              "70-7=",
+              "93-40=",
+              "8×5=",
+              "6×2=",
+            ],
+          },
+          {
+            questionList: [
+              "34+60=",
+              "43+7=",
+              "3×4=",
+              "3×6=",
+              "50-7=",
+              "76-50=",
+              "4×5=",
+              "9×2=",
+            ],
+          },
+        ],
+      },
+      {
+        title: "言之有理",
+        data: [
+          {
+            subTitle: "请你说说下面算式的算理",
+            questionList: "72-27=",
+            textSize: 105,
+          },
+          {
+            subTitle: "请你说说下面算式的算理",
+            questionList: "33-18=",
+            textSize: 105,
+          },
+          {
+            subTitle: "请你说说下面算式的算理",
+            questionList: "65-18=",
+            textSize: 105,
+          },
+          {
+            subTitle: "请你说说下面算式的算理",
+            questionList: "51-39=",
+            textSize: 105,
+          },
+          {
+            subTitle: "请你说说下面算式的算理",
+            questionList: "65-37=",
+            textSize: 105,
+          },
+          {
+            subTitle: "请你说说下面算式的算理",
+            questionList: "50-24=",
+            textSize: 105,
+          },
+        ],
+      },
+      {
+        title: "慧思智拨",
+        data: [
+          {
+            questionType: "image",
+            questionList: "/data/two/math/慧思智拨/1.png",
+          },
+          {
+            questionType: "image",
+            questionList: "/data/two/math/慧思智拨/2.png",
+          },
+          {
+            questionType: "image",
+            questionList: "/data/two/math/慧思智拨/3.png",
+          },
+          {
+            questionType: "image",
+            questionList: "/data/two/math/慧思智拨/4.png",
+          },
+          {
+            questionType: "image",
+            questionList: "/data/two/math/慧思智拨/5.png",
+          },
+          {
+            questionType: "image",
+            questionList: "/data/two/math/慧思智拨/6.png",
           },
         ],
       },
