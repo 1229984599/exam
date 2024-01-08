@@ -48,7 +48,6 @@ function resetConfig() {
               v-model="categoryStore.config.grade"
               placeholder="请选择年级"
             >
-              <el-option label="一年级" value="one" />
               <el-option label="二年级" value="two" />
             </el-select>
           </el-form-item>

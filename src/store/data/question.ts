@@ -137,42 +137,42 @@ export const questionData = {
         title: "触目成诵",
         data: [
           {
-            subTitle: "背诵《对韵歌》并朗诵以下文段",
+            subTitle: "背诵《对韵歌》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/one/yuwen/触目成诵/1.png",
           },
           {
-            subTitle: "背诵《咏鹅》并朗诵以下文段",
+            subTitle: "背诵《咏鹅》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/one/yuwen/触目成诵/2.png",
           },
           {
-            subTitle: "背诵《小小的船》并朗诵以下文段",
+            subTitle: "背诵《小小的船》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/one/yuwen/触目成诵/3.png",
           },
           {
-            subTitle: "背诵《江南》并朗诵以下文段",
+            subTitle: "背诵《江南》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/one/yuwen/触目成诵/4.png",
           },
           {
-            subTitle: "背诵《画》并朗诵以下文段",
+            subTitle: "背诵《画》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/one/yuwen/触目成诵/5.png",
           },
           {
-            subTitle: "背诵《悯农》并朗诵以下文段",
+            subTitle: "背诵《悯农》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/one/yuwen/触目成诵/6.png",
           },
           {
-            subTitle: "背诵《古朗月行》并朗诵以下文段",
+            subTitle: "背诵《古朗月行》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/one/yuwen/触目成诵/7.png",
           },
           {
-            subTitle: "背诵《风》并朗诵以下文段",
+            subTitle: "背诵《风》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/one/yuwen/触目成诵/8.png",
           },
@@ -182,49 +182,49 @@ export const questionData = {
         title: "能说会道",
         data: [
           {
-            subTitle: "请仔细观察画面，说几句通顺的话",
+            subTitle: "请仔细观察画面，说几句通顺的话。",
             questionType: "image",
             questionList: "/data/one/yuwen/能说会道/1.png",
           },
           {
             subTitle:
-              "仔细看图，什么时候谁在哪里干什么？心情怎样？用一两句话说出来",
+              "仔细看图，什么时候谁在哪里干什么？心情怎样？用一两句话说出来。",
             questionType: "image",
             questionList: "/data/one/yuwen/能说会道/2.png",
           },
           {
             subTitle:
-              "仔细看图，图中的小朋友在什么地方干什么呢？他们的心情怎么样？用几句话说一说",
+              "仔细看图，图中的小朋友在什么地方干什么呢？他们的心情怎么样？用几句话说一说。",
             questionType: "image",
             questionList: "/data/one/yuwen/能说会道/3.png",
           },
           {
             subTitle:
-              "仔细看图，什么时候他们在哪里干什么？心情怎样？用一两句话说出来",
+              "仔细看图，什么时候他们在哪里干什么？心情怎样？用一两句话说出来。",
             questionType: "image",
             questionList: "/data/one/yuwen/能说会道/4.png",
           },
           {
             subTitle:
-              "仔细看图，什么时候他们在哪里干什么？心情怎样？用一两句话说出来",
+              "仔细看图，什么时候他们在哪里干什么？心情怎样？用一两句话说出来。",
             questionType: "image",
             questionList: "/data/one/yuwen/能说会道/5.png",
           },
           {
             subTitle:
-              "仔细观察图画，看图都有谁？他们在哪？在做什么？把你看到的、想到的，用几句通顺、连贯的话说出来",
+              "仔细观察图画，看图都有谁？他们在哪？在做什么？把你看到的、想到的，用几句通顺、连贯的话说出来。",
             questionType: "image",
             questionList: "/data/one/yuwen/能说会道/6.png",
           },
           {
             subTitle:
-              "仔细观察图画，这是什么季节？看图都有谁？他们在哪？在做什么？把你看到的、想到的，用一段通顺、连贯的说出来",
+              "仔细观察图画，这是什么季节？看图都有谁？他们在哪？在做什么？把你看到的、想到的，用一段通顺、连贯的说出来。",
             questionType: "image",
             questionList: "/data/one/yuwen/能说会道/7.png",
           },
           {
             subTitle:
-              "仔细看图，什么时候他们在哪里干什么？最后怎样？用一两句话说出来",
+              "仔细看图，什么时候他们在哪里干什么？最后怎样？用一两句话说出来。",
             questionType: "image",
             questionList: "/data/one/yuwen/能说会道/8.png",
           },
@@ -320,32 +320,32 @@ export const questionData = {
         data: [
           {
             textSize: 150,
-            subTitle: "请你说说下面算式“凑十法”的方法",
+            subTitle: "请你说说下面算式“凑十法”的方法。",
             questionList: "8+6=",
           },
           {
             textSize: 150,
-            subTitle: "请你说说下面算式“凑十法”的方法",
+            subTitle: "请你说说下面算式“凑十法”的方法。",
             questionList: "9+4=",
           },
           {
             textSize: 150,
-            subTitle: "请你说说下面算式“凑十法”的方法",
+            subTitle: "请你说说下面算式“凑十法”的方法。",
             questionList: "5+8=",
           },
           {
             textSize: 150,
-            subTitle: "请你说说下面算式“凑十法”的方法",
+            subTitle: "请你说说下面算式“凑十法”的方法。",
             questionList: "8+7=",
           },
           {
             textSize: 150,
-            subTitle: "请你说说下面算式“凑十法”的方法",
+            subTitle: "请你说说下面算式“凑十法”的方法。",
             questionList: "7+5=",
           },
           {
             textSize: 150,
-            subTitle: "请你说说下面算式“凑十法”的方法",
+            subTitle: "请你说说下面算式“凑十法”的方法。",
             questionList: "8+8=",
           },
         ],
@@ -510,42 +510,42 @@ export const questionData = {
         title: "触目成诵",
         data: [
           {
-            subTitle: "背诵《梅花》并朗诵以下文段",
+            subTitle: "背诵《梅花》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/two/yuwen/触目成诵/1.png",
           },
           {
-            subTitle: "背诵《小儿垂钓》并朗诵以下文段",
+            subTitle: "背诵《小儿垂钓》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/two/yuwen/触目成诵/2.png",
           },
           {
-            subTitle: "背诵《登鹳雀楼》并朗诵以下文段",
+            subTitle: "背诵《登鹳雀楼》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/two/yuwen/触目成诵/3.png",
           },
           {
-            subTitle: "背诵《望庐山瀑布》并朗诵以下文段",
+            subTitle: "背诵《望庐山瀑布》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/two/yuwen/触目成诵/4.png",
           },
           {
-            subTitle: "背诵《夜宿山寺》并朗诵以下文段",
+            subTitle: "背诵《夜宿山寺》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/two/yuwen/触目成诵/5.png",
           },
           {
-            subTitle: "背诵《数九歌》并朗诵以下文段",
+            subTitle: "背诵《数九歌》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/two/yuwen/触目成诵/6.png",
           },
           {
-            subTitle: "背诵《敕勒歌》并朗诵以下文段",
+            subTitle: "背诵《敕勒歌》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/two/yuwen/触目成诵/7.png",
           },
           {
-            subTitle: "背诵《江雪》并朗诵以下文段",
+            subTitle: "背诵《江雪》并朗诵以下文段。",
             questionType: "image",
             questionList: "/data/two/yuwen/触目成诵/8.png",
           },
@@ -555,32 +555,32 @@ export const questionData = {
         title: "能说会道",
         data: [
           {
-            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话。",
             questionType: "image",
             questionList: "/data/two/yuwen/能说会道/1.png",
           },
           {
-            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话。",
             questionType: "image",
             questionList: "/data/two/yuwen/能说会道/2.png",
           },
           {
-            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话。",
             questionType: "image",
             questionList: "/data/two/yuwen/能说会道/3.png",
           },
           {
-            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话。",
             questionType: "image",
             questionList: "/data/two/yuwen/能说会道/4.png",
           },
           {
-            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话。",
             questionType: "image",
             questionList: "/data/two/yuwen/能说会道/5.png",
           },
           {
-            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话",
+            subTitle: "认真看图，想一想图中讲了谁在干什么，说一段通顺的话。",
             questionType: "image",
             questionList: "/data/two/yuwen/能说会道/6.png",
           },
@@ -669,32 +669,32 @@ export const questionData = {
         title: "言之有理",
         data: [
           {
-            subTitle: "请你说说下面算式的算理",
+            subTitle: "请你说说下面算式的算理。",
             questionList: "72-27=",
             textSize: 105,
           },
           {
-            subTitle: "请你说说下面算式的算理",
+            subTitle: "请你说说下面算式的算理。",
             questionList: "33-18=",
             textSize: 105,
           },
           {
-            subTitle: "请你说说下面算式的算理",
+            subTitle: "请你说说下面算式的算理。",
             questionList: "65-18=",
             textSize: 105,
           },
           {
-            subTitle: "请你说说下面算式的算理",
+            subTitle: "请你说说下面算式的算理。",
             questionList: "51-39=",
             textSize: 105,
           },
           {
-            subTitle: "请你说说下面算式的算理",
+            subTitle: "请你说说下面算式的算理。",
             questionList: "65-37=",
             textSize: 105,
           },
           {
-            subTitle: "请你说说下面算式的算理",
+            subTitle: "请你说说下面算式的算理。",
             questionList: "50-24=",
             textSize: 105,
           },
